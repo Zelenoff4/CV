@@ -1,0 +1,157 @@
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{multicol}
+\usepackage{amsmath}
+\newcommand{\rom}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+\title{CV}
+
+\renewcommand{\baselinestretch}{0.75} 
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+ \geometry{top=0.7cm}
+ \geometry{bottom=0.3cm}
+ \geometry{left=0.9cm}
+ \geometry{right=1.1cm}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+% personal data
+\firstname{Maxim}
+\familyname{Zelenov}                               % optional, remove / comment the line if not wanted
+\address{}{7k4, Kushelevskaya Doroga, Saint-Petersburg, Russia}{+7~(931)~339~0887} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+              % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+                           % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{zelenoff9988@gmail.com\\
+}               % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\vspace{-4ex}
+\
+% arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+
+\section{Skills}
+\cvitem{Programming languages}{Python, C++, SQL, basic knowledge of Java, Golang, Haskell}
+\cvitem{Applications}{ \href{https://github.com/Zelenoff4}{\textbf{Git}}, Svn}
+\cvitem{Languages}{Russian (Native), English (Advanced)}
+\cvitem{Other}{Linux experience, \LaTeX}
+
+\section{Work experience}
+
+
+\cvitem{April 2021 -- now}{
+    \textbf{Yandex, Software Engineer}
+}
+
+\begin{cvcolumns}
+\cvcolumn{}{
+    \begin{itemize}
+	\item Member of a team that develops Yandex Knowledge Graph Search Engine;
+	\item Worked on E2E feature thet helps to aggregate and display information about popular questions on searched entities;
+	\item As a result, the number of objects with popular questions was increased in 4 times, which brought 10\% increase in clicks (engagement metric);
+	\item I was the main point of contact for providing technical support about our team object-answer database.
+    \end{itemize}
+}\end{cvcolumns}
+
+
+\cvitem{July 2019 -- March 2021 }{
+    \textbf{Yandex, Junior Software Engineer}
+}
+
+\begin{cvcolumns}
+\cvcolumn{}{
+    \begin{itemize}
+	\item Was responsible for the stability of process of the automatic rebuilding of the object-answer database; 
+	\item Optimized lots of code in different scopes of object-answer database;
+	\item Reduced time consumed by developers on devops-duty by 30\% by fixing individual bugs and systematic problems;
+	\item Developed a microservice that reported recent deaths based on changes of wikipedia and wikidata pages.
+    \end{itemize}
+}\end{cvcolumns}
+
+\cvitem{January 2019 -- June 2019}{
+    \textbf{Yandex, Software Engineer Intern}
+}
+
+\begin{cvcolumns}
+\cvcolumn{}{
+    \begin{itemize}
+        \item Rewrote code for multiple web data fetchers from \textbf {bash} to \textbf {python}.
+    \end{itemize}
+}\end{cvcolumns}
+
+\section{Education}
+
+\cventry{2016--2020}{BS in Applied Mathematics and Computer Science}{}{}{National Research University Information Technologies, Mechanics and Optics (ITMO), Department of Computer Science, Saint-Petersburg, Russia}
+{\underline{\normalsize Relevant courses:}}
+
+\begin{cvcolumns}
+\cvcolumn{}{
+\begin{itemize}
+    \item Algorithms and Data Structures
+    \item Descrete Mathematics
+    \end{itemize}
+}
+\cvcolumn{}{
+    \begin{itemize}
+    \item Machine Learning
+    \item Mathematical Logic
+    \end{itemize}
+}
+\end{cvcolumns}
+
+\section{Professional Interests}
+
+\begin{cvcolumns}
+
+    \cvcolumn{}{
+        \begin{itemize}
+            \item Backend development
+	 \item Want to see my efforts and ideas help products to grow
+            \item Passionate to be helpful and useful
+        \end{itemize}
+    }
+\end{cvcolumns}    
+\section{Personal Interests}
+
+\begin{cvcolumns}
+
+    \cvcolumn{}{
+        \begin{itemize}
+            \item Sports and e-sports
+	 \item Psychology
+            \item Socializing
+        \end{itemize}
+    }
+\end{cvcolumns}    
+
+\end{document}
