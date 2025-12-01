@@ -29,7 +29,7 @@
 % personal data
 \firstname{Maxim}
 \familyname{Zelenov}                               % optional, remove / comment the line if not wanted
-\address{}{4k1, Bogoslovskaya street, Saint-Petersburg, Russia}{+7~(931)~339~0887} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{}{Saint-Petersburg, Russia}{+7~(931)~339~0887} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
               % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
@@ -61,21 +61,33 @@
 
 
 \section{Skills}
-\cvitem{Programming languages}{Python, Golang, SQL, university level knowledge of Java, C++}
+\cvitem{Programming languages}{\textbf{Python}, \textbf{Golang}, SQL, university level knowledge of Java, C++}
 \cvitem{Applications}{ \href{https://github.com/Zelenoff4}{\textbf{Git}}, Svn}
 \cvitem{Languages}{Russian (Native), English (Advanced)}
+\cvitem{Databases} {MySql, Postgres, Clickhouse}
 \cvitem{Other}{Linux experience, \LaTeX}
 
 \section{Work experience}
+\cvitem{May 2024 - August 2025}{
+    \textbf{Yandex, Software Engineer}
+}
+\begin{cvcolumns}
+\cvcolumn{}{
+    \begin{itemize}
+	\item Contributing as a member of the \textbf{P}ayment\textbf{S}ervice\textbf{P}rovider team
+	\item Developed a backend service from ground up for \textbf{subscriptions}: recurring payments, different plans, cancellation, grace periods;
+	\item Tackeld problems like \textbf{idempotency} for http requests, \textbf{Postgres} DB management, writing \textbf{golden tests} to cover functionality;
+    \end{itemize}
+}\end{cvcolumns}
 
-\cvitem{August 2022 -- now }{
+\cvitem{August 2022 -- April 2024 }{
     \textbf{VK, Software Engineer}
 }
 \begin{cvcolumns}
 \cvcolumn{}{
     \begin{itemize}
 	\item Member of a SMSAPI team that develops multiple microservices for delivering OTPs, emails, sms, VK and OK messages;
-	\item Developing a backend for these microservices in close connection with frontend team and product managers;
+	\item Developed a number of analytic tools: from graphs and diagrams of SMS distribution to advanced and aggregated financial reports;
 	\item Developed a system from ground up that allows to send up to 20 million (and growing) emails per day;
     \end{itemize}
 }\end{cvcolumns}
@@ -114,29 +126,6 @@
 }
 \end{cvcolumns}
 
-\section{Professional Interests}
 
-\begin{cvcolumns}
-
-    \cvcolumn{}{
-        \begin{itemize}
-            \item Backend development
-	 \item Want to see my efforts and ideas help products grow
-            \item Passionate to be helpful and useful
-        \end{itemize}
-    }
-\end{cvcolumns}    
-\section{Personal Interests}
-
-\begin{cvcolumns}
-
-    \cvcolumn{}{
-        \begin{itemize}
-            \item Sports and e-sports
-	 \item Psychology
-            \item Socializing
-        \end{itemize}
-    }
-\end{cvcolumns}    
 
 \end{document}
